@@ -187,7 +187,7 @@ cython_debug/
 *.msg
 *.pages
 *.rtf
-*.txt
+heroku.txt
 *.wpd
 *.wps
 
