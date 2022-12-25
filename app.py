@@ -1,13 +1,10 @@
 from flask import Flask, render_template
 from flask import request, jsonify
-from flask_frozen import Freezer
 import pickle
 import numpy as np
 
 
 app = Flask(__name__)
-
-freezer = Freezer(app)
 
 # Load the Model
 regmodel = pickle.load(open('regmodel.pkl','rb'))
@@ -38,5 +35,4 @@ def predict():
         
 
 if __name__ =="__main__":
-    # app.run(host='0.0.0.0', port=8080)
-    freezer.freeze()
+    app.run(host='0.0.0.0')
