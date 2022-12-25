@@ -1,6 +1,7 @@
 pandas
 numpy
 flask
+Frozen-Flask
 scikit-learn
 matplotlib
 seaborn
